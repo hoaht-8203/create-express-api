@@ -52,7 +52,8 @@ Sau khi command hoàn tất, bạn cần di chuyển vào thư mục dự án, t
 ```bash
 cd <project-name>
 
-# Khởi chạy database bằng Docker (trong trường hợp bạn chưa có DB thật) (Có thể bỏ qua nếu có rồi)
+# Khởi chạy database bằng Docker (trong trường hợp bạn chưa có DB thật)
+# Có thể bỏ qua nếu có URL database đang hoạt động rồi
 docker compose up -d
 
 # Cài đặt dependencies (nếu chưa chọn tự động cài đặt)
