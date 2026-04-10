@@ -1,4 +1,4 @@
-[Send Feedback](https://github.com/hoaht-8203/create-express-api/issues/new)
+[![Feedback](https://img.shields.io/badge/Feedback-Submit-blue)](https://github.com/hoaht-8203/create-express-api/issues/new)
 
 # create-express-api
 
