@@ -1,0 +1,19 @@
+{
+  "entryFile": "src/app.ts",
+  "tsconfig": "tsconfig.json",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/**/*.controller.ts"],
+  "spec": {
+    "outputDirectory": "src/generated",
+    "specVersion": 3
+  },
+  "routes": {
+    "routesDir": "src/generated"
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  }
+}

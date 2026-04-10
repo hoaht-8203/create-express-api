@@ -1,0 +1,16 @@
+{
+  "name": "create-express-api",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "create-express-api": "./bin/create-app.js"
+  },
+  "scripts": {
+    "dev": "node ./bin/create-app.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2"
+  }
+}

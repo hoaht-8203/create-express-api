@@ -1,0 +1,6 @@
+{
+  "watch": ["src", ".env"],
+  "ext": ".ts,.js",
+  "ignore": ["src/generated/**/*"],
+  "exec": "tsoa spec-and-routes -c tsoa.config.json && tsx ./src/server.ts"
+}

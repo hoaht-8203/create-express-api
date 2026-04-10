@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      TZ: Asia/Ho_Chi_Minh # Thiết lập múi giờ cho hệ điều hành của container
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Đừng quên service chứa code Node.js của bạn
+  app:
+    build: .
+    environment:
+      TZ: Asia/Ho_Chi_Minh # Rất quan trọng để new Date() chạy đúng giờ VN
+    # ... các cấu hình khác
